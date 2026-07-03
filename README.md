@@ -177,3 +177,23 @@ All request payloads and response payloads are in `application/json` format. Pro
 ### 4. Admin Dashboard
 * `GET /api/dashboard/stats` (Protected - Admin only)
   * Response: Summarized metrics: total complaints, count by status state, count by category, and total overdue count.
+
+
+## API Documentation
+
+### Authentication
+POST /api/auth/register
+POST /api/auth/login
+
+### Complaints
+GET /api/complaints
+POST /api/complaints
+PUT /api/complaints/:id
+GET /api/complaints/:id/history
+
+### Dashboard
+GET /api/dashboard
+
+### Notices
+GET /api/notices
+POST /api/notices
